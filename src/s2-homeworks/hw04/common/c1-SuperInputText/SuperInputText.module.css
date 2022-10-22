@@ -1,0 +1,32 @@
+.input:focus {
+  scale: 1.05;
+}
+
+.input {
+
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.superInput {
+  transition: ease-in-out 0.3s;
+}
+
+.errorInput {
+  border: 1px solid #cc0000;
+}
+
+.errorInput:focus {
+  border: 1px solid #cc0000;
+}
+
+.error {
+  color: #cc0000;
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
