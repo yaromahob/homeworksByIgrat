@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/homeworksByIgrat/static/css/main.8de56ea1.css",
-    "main.js": "/homeworksByIgrat/static/js/main.5edb653f.js",
+    "main.css": "/homeworksByIgrat/static/css/main.34fb2cc5.css",
+    "main.js": "/homeworksByIgrat/static/js/main.b985880e.js",
     "static/js/787.05642c0a.chunk.js": "/homeworksByIgrat/static/js/787.05642c0a.chunk.js",
     "static/media/avatar.png": "/homeworksByIgrat/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/404.svg": "/homeworksByIgrat/static/media/404.dae7af4892f2a3abe805a174178919f2.svg",
     "static/media/closeOutline.svg": "/homeworksByIgrat/static/media/closeOutline.91a6693133923612a0702421ab3e9923.svg",
     "static/media/editIcon.svg": "/homeworksByIgrat/static/media/editIcon.11c8e1c42f9a4eae81897d68e091eb42.svg",
+    "static/media/chevron-down.svg": "/homeworksByIgrat/static/media/chevron-down.70da4d4f01beb7ae2174.svg",
     "static/media/checked.svg": "/homeworksByIgrat/static/media/checked.0b6a1bcf5d417ff0a947.svg",
     "index.html": "/homeworksByIgrat/index.html",
     "static/media/burger.svg": "/homeworksByIgrat/static/media/burger.e4e6b98e4ee0b2dfcd76d02a9eed2e34.svg",
-    "main.8de56ea1.css.map": "/homeworksByIgrat/static/css/main.8de56ea1.css.map",
-    "main.5edb653f.js.map": "/homeworksByIgrat/static/js/main.5edb653f.js.map",
+    "main.34fb2cc5.css.map": "/homeworksByIgrat/static/css/main.34fb2cc5.css.map",
+    "main.b985880e.js.map": "/homeworksByIgrat/static/js/main.b985880e.js.map",
     "787.05642c0a.chunk.js.map": "/homeworksByIgrat/static/js/787.05642c0a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8de56ea1.css",
-    "static/js/main.5edb653f.js"
+    "static/css/main.34fb2cc5.css",
+    "static/js/main.b985880e.js"
   ]
 }
