@@ -11,7 +11,6 @@ type DefaultSelectPropsType = DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectE
 
 type SuperSelectPropsType = DefaultSelectPropsType & {
   options?: OptionsType[]
-  value?: number
   onChangeOption?: (option: number) => void
 }
 
@@ -19,8 +18,8 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
                                                        options,
                                                        className,
                                                        onChange,
-                                                       onChangeOption,
                                                        value,
+                                                       onChangeOption,
                                                        ...restProps
                                                      }) => {
   const mappedOptions: JSX.Element[] = options
@@ -30,6 +29,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
         className={s.option}
         key={o.id}
         value={o.id}
+        selected={value === o.id}
       >
         {o.value}
       </option>
@@ -40,15 +40,14 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
 
     onChangeOption?.(Number(e.currentTarget.value));
   };
-
-  console.log();
+  console.log({...restProps});
   const finalSelectClassName = s.select + (className ? ' ' + className : '');
   return (
 
     <select
       className={finalSelectClassName}
       onChange={onChangeCallback}
-      name={value ? mappedOptions[value - 1].props.children : ''}
+
       {...restProps}
     >
       {mappedOptions}

@@ -1,5 +1,5 @@
-import React, {ChangeEvent, KeyboardEvent} from 'react'
-import s from './Greeting.module.css'
+import React, {ChangeEvent, KeyboardEvent} from 'react';
+import s from './Greeting.module.css';
 
 type GreetingPropsType = {
   name: string
@@ -25,8 +25,8 @@ const Greeting: React.FC<GreetingPropsType> = (
     lastUserName,
   } // деструктуризация пропсов
 ) => {
-  const inputClass = error ? s.errorInput : '' // need to fix with (?:)
-  
+  const inputClass = error ? s.greetInputForm + ' ' + s.errorInput : s.greetInputForm; // need to fix with (?:)
+
   return (
     <div id={'hw3-form'} className={s.greetingForm}>
       <div className={s.text}>
@@ -35,7 +35,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                     {totalUsers}
                 </span>
       </div>
-      
+
       <div className={s.inputAndButtonContainer}>
         <div>
           <input
@@ -50,7 +50,7 @@ const Greeting: React.FC<GreetingPropsType> = (
             {error}
           </div>
         </div>
-        
+
         <button
           id={'hw3-button'}
           onClick={addUser}
@@ -60,14 +60,14 @@ const Greeting: React.FC<GreetingPropsType> = (
           Add
         </button>
       </div>
-      
+
       {lastUserName && (
         <div className={s.greeting}>
           Привет <span id={'hw3-last-user'}>{lastUserName}</span>!
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Greeting
+export default Greeting;

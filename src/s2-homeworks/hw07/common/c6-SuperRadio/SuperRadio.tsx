@@ -15,7 +15,6 @@ type DefaultSpanPropsType = DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>,
 
 type SuperRadioPropsType = Omit<DefaultRadioPropsType, 'type'> & {
   options?: OptionsType[]
-  value: number
   onChangeOption?: (option: number) => void
 
   spanProps?: DefaultSpanPropsType // пропсы для спана
