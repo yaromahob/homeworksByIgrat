@@ -7,12 +7,16 @@
   transition: ease-in-out 0.1s;
 }
 
+.button:hover {
+  transform: scale(1.05);
+}
+
 .disabled {
   opacity: 0.5;
 }
 
 .secondary {
-  width: 129px;
+  width: 116px;
   height: 30px;
   background-color: transparent;
   border: 1px solid #0066CC;
@@ -36,7 +40,6 @@
 }
 
 .secondary:hover {
-  width: 149px;
   background: #E5F0FA;
 }
 
@@ -46,7 +49,6 @@
 }
 
 .secondary:active {
-  width: 149px;
   background: #C9E5FF;
 }
 
