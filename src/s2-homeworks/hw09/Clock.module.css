@@ -1,4 +1,12 @@
 .buttonsContainer {
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.buttonsContainer button {
+  width: 84px;
+  height: 30px;
 }
 
 .clock {
@@ -8,7 +16,12 @@
 }
 
 .watch strong {
+
 }
 
 .more {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
 }
