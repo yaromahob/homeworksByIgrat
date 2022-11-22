@@ -1,6 +1,6 @@
-/*.container .wrapper:first-child {*/
-/*  width: 212px;*/
-/*}*/
+.container .wrapper:first-child {
+  width: 200px;
+}
 
 
 .wrapper {

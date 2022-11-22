@@ -17,7 +17,8 @@ function HW11() {
   const [value2, setValue2] = useState(restoreState<number>('hw11-value2', 100));
   
   const change = (event: Event, value: number | number[]) => {
-    
+    console.log(value1);
+    console.log(value2);
     if (typeof value === 'object') {
       setValue2(value[1]);
       setValue1(value[0]);

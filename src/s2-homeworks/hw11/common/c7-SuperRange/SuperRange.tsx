@@ -28,6 +28,7 @@ const SuperRange: React.FC<SliderProps> = (props) => {
         }
         
       }}
+      step={1}
       getAriaLabel={() => 'Temperature range'}
       {...props} // отдаём слайдеру пропсы если они есть (value например там внутри)
     />
