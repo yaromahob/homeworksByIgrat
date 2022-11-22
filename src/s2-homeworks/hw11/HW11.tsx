@@ -50,6 +50,9 @@ function HW11() {
               id={'hw11-double-slider'}
               onChange={change}
               value={[value1, value2]}
+              min={1}
+              max={100}
+              step={1}
               // сделать так чтоб value1/2 изменялось // пишет студент
             />
             <span id={'hw11-value-2'} className={s.number}>{value2}</span>

@@ -1,16 +1,13 @@
 .container .wrapper:first-child {
-  width: 99%;
+  width: 212px;
 }
 
 
 .wrapper {
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*gap: 20px;*/
-  /*width: 250px;*/
-  width: 100%;
   display: flex;
+  align-items: center;
   gap: 20px;
+  width: 250px;
 }
 
 
