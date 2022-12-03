@@ -1,18 +1,18 @@
-/*.container .wrapper:first-child {*/
-/*  width: 212px;*/
-/*}*/
+.container .wrapper:first-child {
+  width: 212px;
+}
 
 
-/*.wrapper {*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  gap: 20px;*/
-/*  width: 250px;*/
-/*}*/
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 250px;
+}
 
 
-/*.number {*/
-/*  font-weight: 600;*/
-/*  font-size: 16px;*/
-/*  line-height: 20px;*/
-/*}*/
+.number {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
