@@ -1,7 +1,16 @@
+
 .buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .responseContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 35px 0;
 }
 
 .imageContainer {
@@ -10,13 +19,27 @@
 .image {
 }
 
-.textContainer{
+.textContainer {
+  width: 40%;
 }
 
 .code {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
 }
 
 .text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
+
 .info {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
