@@ -62,8 +62,8 @@ const HW15 = () => {
     // делает студент
     setPage(newPage);
     setCount(newCount);
-    sendQuery({page: newPage, count: newCount});
-    setSearchParams(`page=${newPage}&count=${newCount}`);
+    sendQuery({page: newPage, count: newCount, sort: sort});
+    setSearchParams(`page=${newPage}&count=${newCount}sort=${sort}`);
     // setPage(
     // setCount(
     
@@ -79,7 +79,7 @@ const HW15 = () => {
     console.log(newSort);
     setSort(newSort);
     setPage(1);
-    sendQuery({sort: newSort});
+    sendQuery({page: page, count: count, sort: newSort});
     if (!params.page && !params.count) {
       params.page = '1';
       params.count = '4';
