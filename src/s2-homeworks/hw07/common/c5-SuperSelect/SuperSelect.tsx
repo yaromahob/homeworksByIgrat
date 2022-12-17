@@ -5,6 +5,7 @@ import React, {
 } from 'react';
 import s from './SuperSelect.module.css';
 import {OptionsType} from "../../HW7";
+import {logDOM} from "@testing-library/react";
 
 type DefaultSelectPropsType = DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectElement>,
   HTMLSelectElement>
@@ -37,11 +38,12 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
   const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
     // делают студенты
     onChangeOption?.(Number(e.currentTarget.value));
+    onChange?.(e);
   };
-
+  
   const finalSelectClassName = s.select + (className ? ' ' + className : '');
   return (
-
+    
     <select
       className={finalSelectClassName}
       onChange={onChangeCallback}
