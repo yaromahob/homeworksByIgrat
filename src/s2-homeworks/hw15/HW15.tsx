@@ -74,11 +74,14 @@ const HW15 = () => {
   };
   
   const onChangeSort = (newSort: string) => {
+    const params = Object.fromEntries(searchParams);
     // делает студент
     setSort(newSort);
     setPage(1);
     sendQuery({sort: newSort});
-    setSearchParams(newSort);
+    setSearchParams(
+      {page: params.page, count: params.count, sort: newSort}
+    );
     // setSort(
     // setPage(1) // при сортировке сбрасывать на 1 страницу
     
